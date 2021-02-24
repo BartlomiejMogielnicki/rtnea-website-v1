@@ -18,9 +18,9 @@ const StyledWrapper = styled.nav`
 `;
 
 const StyledList = styled.ul`
+  margin: 0 auto;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
   max-width: 900px;
   display: flex;
   justify-items: center;
@@ -34,8 +34,6 @@ const StyledListItem = styled.li`
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
 
   .active {
     border-bottom: 3px solid #000;
