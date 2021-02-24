@@ -1,8 +1,11 @@
 import React from 'react';
+import GlobalStyle from '../style/globalStyle';
+import Header from '../components/molecules/Header/Header';
 
 const Layout = ({ children }) => (
   <>
-    <header>Header</header>
+    <GlobalStyle />
+    <Header />
     <main>{children}</main>
     <footer>Footer</footer>
   </>
