@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import '@fontsource/roboto';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -8,12 +9,17 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box
 }
 
+body {
+  font-family: 'Roboto';
+}
+
 li {
-  list-style: none
+  list-style: none;
 }
 
 a {
-  text-decoration: none
+  color: inherit;
+  text-decoration: none;
 }
 
 `;
