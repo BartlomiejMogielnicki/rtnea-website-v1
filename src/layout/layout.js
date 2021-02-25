@@ -8,6 +8,17 @@ import styled from 'styled-components';
 const StyledBackground = styled(BackgroundImage)`
   height: 100%;
   width: 100%;
+  position: relative;
+`;
+
+const StyledBackdrop = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 `;
 
 const StyledWrapper = styled.div`
@@ -22,6 +33,7 @@ const Layout = ({ children, backgroundImage }) => {
       <Header />
       <main>
         <StyledBackground Tag="section" fluid={backgroundImage}>
+          <StyledBackdrop />
           <StyledWrapper>{children}</StyledWrapper>
         </StyledBackground>
       </main>

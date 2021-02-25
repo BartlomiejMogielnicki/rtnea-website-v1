@@ -7,7 +7,7 @@ const GalleryPage = () => {
     query {
       file(relativePath: { eq: "background/galleryBackground.jpeg" }) {
         sharp: childImageSharp {
-          fluid(quality: 100) {
+          fluid(maxWidth: 4000, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
