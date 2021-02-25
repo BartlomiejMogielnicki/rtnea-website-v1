@@ -22,6 +22,22 @@ a {
   text-decoration: none;
 }
 
+input:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+input, textarea {
+  border: none;
+  font-family: 'Roboto'
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 `;
 
 export default GlobalStyle;

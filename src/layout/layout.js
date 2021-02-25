@@ -24,6 +24,7 @@ const StyledBackdrop = styled.div`
 const StyledWrapper = styled.div`
   padding-top: 80px;
   min-height: 100vh;
+  position: relative;
 `;
 
 const Layout = ({ children, backgroundImage }) => {
