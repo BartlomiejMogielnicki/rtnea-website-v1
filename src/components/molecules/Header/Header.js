@@ -8,6 +8,10 @@ const StyledHeader = styled.header`
   display: flex;
   justify-items: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 `;
 
 const Header = () => (

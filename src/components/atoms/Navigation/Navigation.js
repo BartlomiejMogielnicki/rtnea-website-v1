@@ -26,6 +26,7 @@ const StyledList = styled.ul`
   justify-items: center;
   align-items: center;
   justify-content: space-evenly;
+  color: #fff;
 `;
 
 const StyledListItem = styled.li`
@@ -36,7 +37,7 @@ const StyledListItem = styled.li`
   text-transform: uppercase;
 
   .active {
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #fff;
   }
 `;
 
