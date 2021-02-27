@@ -38,6 +38,11 @@ button {
   cursor: pointer;
 }
 
+// Audio player progress bar hide
+.rhap_progress-section {
+  display: none;
+}
+
 `;
 
 export default GlobalStyle;

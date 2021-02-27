@@ -95,12 +95,14 @@ const ContactForm = () => {
         </StyledSection>
       </StyledContainer>
       <StyledSection>
-        <StyledLabel htmlFor="text">Wiadomość</StyledLabel>
-        <StyledTextarea
-          name="text"
-          id="text"
-          placeholder="Nie zapomnij wspomnieć gdzie odbędzie się event. Jeśli nie otrzymasz odpowiedzi w ciągu 24h ponów kontakt..."
-        ></StyledTextarea>
+        <StyledLabel htmlFor="text">
+          Wiadomość
+          <StyledTextarea
+            name="text"
+            id="text"
+            placeholder="Nie zapomnij wspomnieć gdzie odbędzie się event. Jeśli nie otrzymasz odpowiedzi w ciągu 24h ponów kontakt..."
+          ></StyledTextarea>
+        </StyledLabel>
       </StyledSection>
       <button type="submit">Wyślij</button>
     </StyledForm>

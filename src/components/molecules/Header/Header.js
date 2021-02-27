@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navigation from '../../atoms/Navigation/Navigation';
+import MusicPlayer from '../../atoms/MusicPlayer/MusicPlayer';
 
 const StyledHeader = styled.header`
   height: 80px;
@@ -17,6 +18,7 @@ const StyledHeader = styled.header`
 const Header = () => (
   <StyledHeader>
     <Navigation />
+    <MusicPlayer />
   </StyledHeader>
 );
 
