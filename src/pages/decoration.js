@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../layout/layout';
 import { graphql, useStaticQuery } from 'gatsby';
+import Hero from '../components/atoms/Hero/Hero';
 
 const DecorationPage = () => {
   const data = useStaticQuery(graphql`
@@ -16,7 +17,9 @@ const DecorationPage = () => {
   `);
 
   return (
-    <Layout backgroundImage={data.file.sharp.fluid}>DecorationPage</Layout>
+    <Layout>
+      <Hero backgroundImage={data.file.sharp.fluid}>DecorationPage</Hero>
+    </Layout>
   );
 };
 

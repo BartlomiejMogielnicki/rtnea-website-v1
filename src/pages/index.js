@@ -5,8 +5,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { Link } from 'gatsby';
 import Hero from '../components/atoms/Hero/Hero';
 
-const StyledWrapper = styled.div``;
-
 const StyledTitle = styled.h1`
   margin-bottom: 40px;
   font-size: 7rem;
@@ -19,7 +17,20 @@ const StyledSubtitle = styled.h2`
   font-size: 2rem;
 `;
 
+const StyledWrapper = styled.div`
+  margin: 20px auto;
+  width: 90%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  border-bottom: 1px solid #555;
+  text-align: center;
+`;
+
 const StyledAboutSection = styled.section`
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,8 +38,7 @@ const StyledAboutSection = styled.section`
 `;
 
 const StyledQuoteSection = styled.section`
-  display: flex;
-  align-items: center;
+  margin: 60px 0 30px;
   font-style: italic;
 `;
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../layout/layout';
 import { graphql, useStaticQuery } from 'gatsby';
+import Hero from '../components/atoms/Hero/Hero';
 
 const GalleryPage = () => {
   const data = useStaticQuery(graphql`
@@ -15,7 +16,11 @@ const GalleryPage = () => {
     }
   `);
 
-  return <Layout backgroundImage={data.file.sharp.fluid}>GalleryPage</Layout>;
+  return (
+    <Layout>
+      <Hero backgroundImage={data.file.sharp.fluid}>GalleryPage</Hero>
+    </Layout>
+  );
 };
 
 export default GalleryPage;

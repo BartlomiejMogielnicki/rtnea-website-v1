@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../layout/layout';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
+import Hero from '../components/atoms/Hero/Hero';
 import ContactForm from '../components/organisms/ContactForm/ContactForm';
 
 const StyledWrapper = styled.div`
@@ -25,10 +26,12 @@ const ContactPage = () => {
   `);
 
   return (
-    <Layout backgroundImage={data.file.sharp.fluid}>
-      <StyledWrapper>
-        <ContactForm />
-      </StyledWrapper>
+    <Layout>
+      <Hero backgroundImage={data.file.sharp.fluid}>
+        <StyledWrapper>
+          <ContactForm />
+        </StyledWrapper>
+      </Hero>
     </Layout>
   );
 };
