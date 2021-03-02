@@ -24,9 +24,13 @@ const StyledBackdrop = styled.div`
 `;
 
 const StyledWrapper = styled.div`
+  margin: 0 auto;
   padding-top: 80px;
   min-height: 100vh;
+  max-width: 800px;
+  width: 90%;
   position: relative;
+  color: #fff;
 `;
 
 const Layout = ({ children, backgroundImage }) => {
