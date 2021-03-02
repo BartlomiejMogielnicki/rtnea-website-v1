@@ -3,21 +3,13 @@ import Layout from '../layout/layout';
 import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Link } from 'gatsby';
+import Hero from '../components/atoms/Hero/Hero';
 
-const StyledWrapper = styled.div`
-  min-height: calc(100vh - 80px);
-  display: grid;
-  grid-template-rows: 0.3fr 0.5fr 0.2fr;
-  justify-items: center;
-  text-align: center;
-`;
-
-const StyledTitleSection = styled.section`
-  margin-top: 50px;
-`;
+const StyledWrapper = styled.div``;
 
 const StyledTitle = styled.h1`
-  font-size: 5rem;
+  margin-bottom: 40px;
+  font-size: 7rem;
   font-weight: normal;
   letter-spacing: 1px;
 `;
@@ -58,12 +50,12 @@ const HomePage = () => {
   `);
 
   return (
-    <Layout backgroundImage={data.file.sharp.fluid}>
+    <Layout>
+      <Hero backgroundImage={data.file.sharp.fluid}>
+        <StyledTitle>Rock The Nigth</StyledTitle>
+        <StyledSubtitle>Organizacja imprez i wiele więcej...</StyledSubtitle>
+      </Hero>
       <StyledWrapper>
-        <StyledTitleSection>
-          <StyledTitle>Rock The Nigth</StyledTitle>
-          <StyledSubtitle>Organizacja imprez i wiele więcej...</StyledSubtitle>
-        </StyledTitleSection>
         <StyledAboutSection>
           <p>
             Łączymy wszystko, co tworzy klimat niezapomnianego eventu. Oprawa
