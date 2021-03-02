@@ -1,8 +1,10 @@
 import React from 'react';
 import GlobalStyle from '../style/globalStyle';
+import Helmet from 'react-helmet';
 import Header from '../components/molecules/Header/Header';
 import Footer from '../components/molecules/Footer/Footer';
 import BackgroundImage from 'gatsby-background-image';
+import useSiteMetadata from '../hooks/use-sitemetadata';
 import styled from 'styled-components';
 
 const StyledBackground = styled(BackgroundImage)`
@@ -28,9 +30,16 @@ const StyledWrapper = styled.div`
 `;
 
 const Layout = ({ children, backgroundImage }) => {
+  const { title, description } = useSiteMetadata();
+
   return (
     <>
       <GlobalStyle />
+      <Helmet>
+        <html lang="pl" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Helmet>
       <Header />
       <main>
         <StyledBackground Tag="section" fluid={backgroundImage}>
