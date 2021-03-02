@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../layout/layout';
 import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 
 const StyledWrapper = styled.div`
   min-height: calc(100vh - 80px);
@@ -39,6 +40,10 @@ const StyledQuoteSection = styled.section`
   font-style: italic;
 `;
 
+const StyledLink = styled(Link)`
+  border-bottom: 1px solid white;
+`;
+
 const HomePage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -74,9 +79,10 @@ const HomePage = () => {
           </p>
           <p>
             Dzięki naszym umiejętnościom, nie tylko muzycznym, eventy są na
-            wysokim poziomie z dopracowaniem detali. Oferujemy także dekoracje i
-            dodatkowe usługi, wszystko po to, by podążać za trendami i
-            potrzebami odbiorców.
+            wysokim poziomie z dopracowaniem detali. Oferujemy także{' '}
+            <StyledLink to="/decoration">dekoracje</StyledLink> i dodatkowe{' '}
+            <StyledLink to="/services">usługi</StyledLink>, wszystko po to, by
+            podążać za trendami i potrzebami odbiorców.
           </p>
         </StyledAboutSection>
         <StyledQuoteSection>

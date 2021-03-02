@@ -9,11 +9,11 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 const StyledWrapper = styled.footer`
-  padding: 20px;
-  height: 100%;
+  padding: 20px 0 10px 0;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
   background-color: #000;
@@ -27,8 +27,9 @@ const StyledSocial = styled.div`
 `;
 
 const StyledCopyright = styled.p`
+  margin-top: 20px;
   color: #777;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 `;
 
 const Footer = () => {

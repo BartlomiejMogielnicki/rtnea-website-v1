@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'gatsby';
 
 const navItems = [
@@ -41,14 +41,20 @@ const StyledListItem = styled.li`
   }
 `;
 
+const StyledLink = styled(Link)`
+  &:hover {
+    border-bottom: 3px solid #fff;
+  }
+`;
+
 const Navigation = () => (
   <StyledWrapper>
     <StyledList>
       {navItems.map((item) => (
         <StyledListItem key={item.label}>
-          <Link to={item.path} activeClassName="active">
+          <StyledLink to={item.path} activeClassName="active">
             {item.label}
-          </Link>
+          </StyledLink>
         </StyledListItem>
       ))}
     </StyledList>
