@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Rock The Night Agencja Eventowa',
+    description:
+      'Agencja eventowa. Organizacja najlepszych imprez na każdą okazję. Niezapomniana oprawa muzyczna i dekoracje. Piękna fotografia i filmy upamiętniające wyjątkowe wydarzenia. Wypożyczanie profesjonalnego sprzętu.',
   },
   plugins: [
     'gatsby-plugin-styled-components',
