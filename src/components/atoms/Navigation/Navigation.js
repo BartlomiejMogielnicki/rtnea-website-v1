@@ -4,12 +4,12 @@ import { Link } from 'gatsby';
 
 const navItems = [
   { label: 'O nas', path: '/' },
-  { label: 'Muzyka', path: '/music' },
-  { label: 'Foto&Video', path: '/photo' },
-  { label: 'Dekoracje', path: '/decoration' },
-  { label: 'Usługi', path: '/services' },
-  { label: 'Galeria', path: '/gallery' },
-  { label: 'Kontakt', path: '/contact' },
+  { label: 'Muzyka', path: '/muzyka' },
+  { label: 'Foto&Video', path: '/foto-video' },
+  { label: 'Dekoracje', path: '/dekoracje' },
+  { label: 'Usługi', path: '/uslugi' },
+  { label: 'Galeria', path: '/galeria' },
+  { label: 'Kontakt', path: '/kontakt' },
 ];
 
 const StyledWrapper = styled.nav`
