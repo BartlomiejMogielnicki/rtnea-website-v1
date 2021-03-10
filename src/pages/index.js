@@ -82,8 +82,8 @@ const HomePage = () => {
           <p>
             Dzięki naszym umiejętnościom, nie tylko muzycznym, eventy są na
             wysokim poziomie z dopracowaniem detali. Oferujemy także{' '}
-            <StyledLink to="/decoration">dekoracje</StyledLink> i dodatkowe{' '}
-            <StyledLink to="/services">usługi</StyledLink>, wszystko po to, by
+            <StyledLink to="/dekoracje">dekoracje</StyledLink> i dodatkowe{' '}
+            <StyledLink to="/uslugi">usługi</StyledLink>, wszystko po to, by
             podążać za trendami i potrzebami odbiorców.
           </p>
         </StyledAboutSection>
