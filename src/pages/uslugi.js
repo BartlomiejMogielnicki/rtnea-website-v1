@@ -18,7 +18,13 @@ const ServicesPage = () => {
 
   return (
     <Layout>
-      <Hero backgroundImage={data.file.sharp.fluid}>ServicesPage</Hero>
+      <Hero backgroundImage={data.file.sharp.fluid}>
+        <ul>
+          <li>Wynajem sprzętu</li>
+          <li>Filmowanie dronem</li>
+          <li>Barmani</li>
+        </ul>
+      </Hero>
     </Layout>
   );
 };

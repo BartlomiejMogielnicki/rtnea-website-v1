@@ -18,7 +18,18 @@ const PhotoPage = () => {
 
   return (
     <Layout>
-      <Hero backgroundImage={data.file.sharp.fluid}>PhotoPage</Hero>
+      <Hero backgroundImage={data.file.sharp.fluid}>
+        <ul>
+          <li>Fotorelacja z wesel</li>
+          <li>Fotorelacja eventowa</li>
+          <li>Sesja narzeczeńska</li>
+          <li>Fotografia okolicznościowa</li>
+          <li>Sesje produktowe</li>
+          <li>Zdjęcia nieruchomości</li>
+          <li>Konferencje i targi</li>
+          <li>Foto albumy</li>
+        </ul>
+      </Hero>
     </Layout>
   );
 };
