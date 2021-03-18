@@ -18,7 +18,51 @@ const GalleryPage = () => {
 
   return (
     <Layout>
-      <Hero backgroundImage={data.file.sharp.fluid}>GalleryPage</Hero>
+      <Hero backgroundImage={data.file.sharp.fluid}>
+        <div>
+          <h2>Wydarzenia</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Opinie</h2>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              sapiente totam.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              culpa quas laudantium.
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              quasi fugit, amet accusamus necessitatibus obcaecati commodi odit
+              animi.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Referencje</h2>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              eum consequuntur.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              eum consequuntur.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              eum consequuntur.
+            </li>
+          </ul>
+        </div>
+      </Hero>
     </Layout>
   );
 };
